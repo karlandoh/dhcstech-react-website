@@ -10,7 +10,7 @@ class Footer extends Component {
   state = {
     links: [
       {
-        title: "DORSIN",
+        title: "DHCSTECH",
         child: [
           { link: "#", title: "Home" },
           { link: "#", title: "About us" },
