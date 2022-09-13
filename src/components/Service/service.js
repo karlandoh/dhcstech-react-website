@@ -12,41 +12,41 @@ class Process extends Component {
       services1: [
         {
           icon: "pe-7s-diamond",
-          title: "Digital Design",
+          title: "A Host Of Helpful Features",
           desc:
-            "Some quick example text to build on the card title and make up the bulk of the card's content. Moltin gives you the platform.",
+            "Deploy instant messaging, video conferencing, scheduling, speech-to-text, email access to voicemail and so much more.",
         },
         {
           icon: "pe-7s-display2",
-          title: "Unlimited Colors",
+          title: "Low Upfront Cost",
           desc:
-            "Credibly brand standards compliant users without extensible services. Anibh euismod tincidunt ut laoreet.",
+            "Making monthly expenses more predictable.",
         },
         {
           icon: "pe-7s-piggy",
-          title: "Strategy Solutions",
+          title: "Seamless Integration",
           desc:
-            "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean necessary regelialia.",
+            "Anywhere/anytime without missing a beat or needing a complicated VPN.",
         },
       ],
       services2: [
         {
           icon: "pe-7s-science",
-          title: "Awesome Support",
+          title: "Secure Reliability",
           desc:
-            "It is a paradisematic country, in which roasted parts of sentences fly into your mouth leave for the far World.",
+            "Dependable high quality redundancy avoiding costly interruptions.",
         },
         {
           icon: "pe-7s-news-paper",
-          title: "Truly Multipurpose",
+          title: "Easy Management",
           desc:
-            "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
+            "Make changes without the need for onsite administration, with no cumbersome on-prem equipment to install and maintain.",
         },
         {
           icon: "pe-7s-plane",
-          title: "Easy to customize",
+          title: "Flexibility To Grow",
           desc:
-            "Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia.",
+            "Utilize a unified communications system that is set up to grow as your enterprise grows.",
         },
       ],
     };
@@ -59,8 +59,8 @@ class Process extends Component {
           <Container>
             {/* section title */}
             <SectionTitle
-              title="Our Services"
-              desc="We craft digital, graphic and dimensional thinking, to create category leading brand experiences that have meaning and add a value for our clients."
+              title="Our Services include UCaaS, CCaaS and CPaaS."
+              desc="UCAAS BENEFITS"
             />
 
             <Row className="mt-4">

@@ -20,7 +20,7 @@ class ModalSection extends Component {
     render() {
         return (
             <React.Fragment>
-                <ModalVideo channel={this.props.channel} isOpen={this.state.isOpen} videoId={this.props.videoId} onClose={() => this.setState({isOpen: false})} />
+                <ModalVideo channel='custom' isOpen={this.state.isOpen} url="https://fast.wistia.net/embed/iframe/5kcd6dk3i5?videoFoam=true&amp;autoPlay=true" onClose={() => this.setState({isOpen: false})} />
             </React.Fragment>
         );
     }

@@ -33,10 +33,10 @@ class Section extends Component {
                 <Row className="justify-content-center">
                   <Col lg={8} className="text-white text-center">
                     <h1 className="home-title">
-                      We help startups launch their products
+                    We Are An Official Partner With DialPad
                     </h1>
                     <p className="pt-3 home-desc">
-                      Etiam sed.Interdum consequat proin vestibulum class at.
+                    Unstoppable Teams Start With Unified Communications
                     </p>
                     <p className="play-shadow mt-4">
                       <Link
@@ -56,7 +56,7 @@ class Section extends Component {
             <img src="assets/images/bg-pattern.png" alt="dorsin" />
           </div>
           {/* Render ModalSection Component for Modal */}
-          <ModalSection ref="child" channel="vimeo" videoId="99025203" />
+          <ModalSection ref="child"/> 
         </section>
       </React.Fragment>
     );
