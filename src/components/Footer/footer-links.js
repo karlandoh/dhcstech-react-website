@@ -15,11 +15,13 @@ class FooterLinks extends Component {
                   </p>
                 </div>
                 <div className="float-end pull-none">
+                  {/*
                   <img
                     src="assets/images/payment.png"
                     alt="payment"
                     height="36"
                   />
+    */}
                 </div>
                 <div className="clearfix"></div>
               </Col>

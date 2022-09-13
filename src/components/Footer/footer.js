@@ -84,8 +84,8 @@ class Footer extends Component {
         {/* Render footer links */}
         <FooterLinks />
 
-        {/* color switcher */}
-        <Switcher />
+        {/* <Switcher /> color switcher */}
+        
       </React.Fragment>
     );
   }

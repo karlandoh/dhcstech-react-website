@@ -23,18 +23,15 @@ class Section extends Component {
       <React.Fragment>
         <section
           className="section bg-home home-half"
-          id="home"
           data-image-src="images/bg-home.jpg"
+          id="home"
         >
           <div className="bg-overlay"></div>
           <div className="display-table">
             <div className="display-table-cell">
               <Container>
-                <Row>
-                  <Col
-                    lg={{ size: 8, offset: 2 }}
-                    className="col-lg-8 offset-lg-2 text-white text-center"
-                  >
+                <Row className="justify-content-center">
+                  <Col lg={8} className="text-white text-center">
                     <h1 className="home-title">
                     We Are An Official Partner With DialPad
                     </h1>
@@ -55,35 +52,11 @@ class Section extends Component {
               </Container>
             </div>
           </div>
-          <div className="wave-effect wave-anim">
-            <div className="waves-shape shape-one">
-              <div
-                className="wave wave-one"
-                style={{
-                  backgroundImage: `url(assets/images/wave-shape/wave1.png)`,
-                }}
-              ></div>
-            </div>
-            <div className="waves-shape shape-two">
-              <div
-                className="wave wave-two"
-                style={{
-                  backgroundImage: `url(assets/images/wave-shape/wave2.png)`,
-                }}
-              ></div>
-            </div>
-            <div className="waves-shape shape-three">
-              <div
-                className="wave wave-three"
-                style={{
-                  backgroundImage: `url(assets/images/wave-shape/wave3.png)`,
-                }}
-              ></div>
-            </div>
+          <div className="bg-pattern-effect">
+            <img src="assets/images/bg-pattern.png" alt="dorsin" />
           </div>
-
           {/* Render ModalSection Component for Modal */}
-          <ModalSection ref="child" />
+          <ModalSection ref="child"/> 
         </section>
       </React.Fragment>
     );

@@ -33,10 +33,7 @@ class Index1 extends Component {
       navItems:[
         { id: 1, idnm: "home", navheading: "Home" },
         { id: 2, idnm: "services", navheading: "Services" },
-        { id: 3, idnm: "features", navheading: "Features" },
-        { id: 4, idnm: "pricing", navheading: "Pricing" },
         { id: 5, idnm: "team", navheading: "Team" },
-        { id: 6, idnm: "blog", navheading: "Blog" },
         { id: 7, idnm: "contact", navheading: "Contact" },
       ],
       navClass: "",
@@ -58,35 +55,32 @@ class Index1 extends Component {
         {/* services */}
         <Service sectionClass="pt-5" />
 
-        {/* about us */}
-
-        {/* */}
+        {/* <AboutUs /> about us */}
         
-        <AboutUs />
+        
         
 
-        {/* website description */}
-        {/* */}
+        {/* <WebsiteDesc />website description */}
 
-        <WebsiteDesc />
         
-        {/* pricing */}
-        <Pricing />
+        
+        {/* <Pricing /> pricing */}
+        
 
         {/* team */}
         <Team />
 
-        {/* process */}
-        <Process />
+        {/*<Process /> process */}
+        
 
-        {/* testimonial */}
-        <Testimonials />
+        {/* <Testimonials />testimonial */}
+        
 
         {/* get started */}
         <GetStart />
 
-        {/* blog */}
-        <Blog />
+        {/* <Blog />blog */}
+        
 
         {/* contact */}
         <Contact />

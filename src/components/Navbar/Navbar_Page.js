@@ -81,6 +81,8 @@ class NavbarPage extends Component {
                     <div className="nav-button ms-auto">
                       <Nav navbar className="navbar-end">
                         <li>
+
+                          {/*
                           <Button
                             color="none"
                             type="button"
@@ -88,6 +90,7 @@ class NavbarPage extends Component {
                           >
                             Try it Free
                           </Button>
+                      */}
                         </li>
                       </Nav>
                     </div>

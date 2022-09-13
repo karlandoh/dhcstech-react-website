@@ -29,15 +29,15 @@ class Features extends Component {
                     <span className="h5">Office Address 1:</span>
                     <br />{" "}
                     <span className="text-muted d-block mt-2">
-                      4461 Cedar Street Moro, AR 72368
+                      000 John Doe Street, Burlington ON, AAA 111
                     </span>
                   </p>
                   <p className="mt-4">
                     <span className="h5">Office Address 2:</span>
                     <br />{" "}
                     <span className="text-muted d-block mt-2">
-                      2467 Swick Hill Street <br />
-                      New Orleans, LA 70171
+                      000 John Doe Street <br />
+                      Burlington ON, AAA 111
                     </span>
                   </p>
                   <p className="mt-4">

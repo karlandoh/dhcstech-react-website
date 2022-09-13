@@ -11,24 +11,24 @@ class Clients extends Component {
     this.state = {
       teams: [
         {
-          image: "assets/images/team/img-1.jpg",
-          title: "Frank Johnson",
+          image: "assets/images/team/unnamed.png",
+          title: "Eric Danso",
           desc: "CEO",
         },
         {
-          image: "assets/images/team/img-2.jpg",
-          title: "Elaine Stclair",
-          desc: "DESIGNER",
+          image: "assets/images/team/unnamed.png",
+          title: "Ramar Smith",
+          desc: "ASSOCIATE",
         },
         {
-          image: "assets/images/team/img-3.jpg",
-          title: "Wanda Arthur",
-          desc: "DEVELOPER",
+          image: "assets/images/team/unnamed.png",
+          title: "Additional Name",
+          desc: "ASSOCIATE",
         },
         {
-          image: "assets/images/team/img-4.jpg",
-          title: "Joshua Stemple",
-          desc: "MANAGER",
+          image: "assets/images/team/unnamed.png",
+          title: "Additional Name",
+          desc: "ASSOCIATE",
         },
       ],
     };
