@@ -6,7 +6,7 @@ class Social extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="contact-social bg-light">
+        <section className="contact-social bg-light" >
           <Container>
             <Row className="align-items-center">
               <Col lg={6}>

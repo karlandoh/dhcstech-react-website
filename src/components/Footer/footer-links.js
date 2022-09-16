@@ -11,7 +11,7 @@ class FooterLinks extends Component {
               <Col lg={12}>
                 <div className="float-start pull-none">
                   <p className="copy-rights text-muted">
-                    2020 © KALANDO
+                    2022 © Website Created By KALANDO
                   </p>
                 </div>
                 <div className="float-end pull-none">

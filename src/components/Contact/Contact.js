@@ -14,7 +14,7 @@ class Features extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="section " id="contact">
+        <section className="section " id="contact" style={{background: "#f6f6f6"}}>
           <Container>
             {/* section title */}
             <SectionTitle

@@ -11,18 +11,21 @@ class BlogBox extends Component {
             <div className="blog-box mt-4 hover-effect">
               <img src={blog.image} className="img-fluid" alt="blog" />
               <div>
+                {/*
                 <h5 className="mt-4 text-muted">{blog.category}</h5>
-                <h4 className="mt-3">
-                  <Link to="#" className="blog-title">
+        */}
+                <h4 className="text-center mt-3">
                     {" "}
                     {blog.title}{" "}
-                  </Link>
+
                 </h4>
-                <p className="text-muted">{blog.desc}</p>
+                <p className="text-center text-muted">{blog.desc}</p>
                 <div className="mt-3">
+                  {/*
                   <Link to="#" className="read-btn">
                     Read More <i className="mdi mdi-arrow-right"></i>
                   </Link>
+        */}
                 </div>
               </div>
             </div>

@@ -17,6 +17,8 @@ import ScrollspyNav from "./scrollSpy";
 import "react-sticky-header/styles.css";
 import StickyHeader from "react-sticky-header";
 
+import Logo from "../../images/website-logo-white.png";
+
 class NavbarPage extends Component {
   constructor(props) {
     super(props);
@@ -46,9 +48,16 @@ class NavbarPage extends Component {
               }
             >
               <Container>
+                <a href="http://www.dhcstech.com">
+                  <img src={Logo} className="myLogo">
+                  </img>
+                </a>
+
+                {/*
                 <NavbarBrand className="logo text-uppercase" href="/">
                   DCHSTECH
                 </NavbarBrand>
+            */}
                 <NavbarToggler onClick={this.toggle}>
                   <i className="mdi mdi-menu"></i>
                 </NavbarToggler>
@@ -80,18 +89,6 @@ class NavbarPage extends Component {
                     </Nav>
                     <div className="nav-button ms-auto">
                       <Nav navbar className="navbar-end">
-                        <li>
-
-                          {/*
-                          <Button
-                            color="none"
-                            type="button"
-                            className="btn btn-primary navbar-btn btn-rounded waves-effect waves-light"
-                          >
-                            Try it Free
-                          </Button>
-                      */}
-                        </li>
                       </Nav>
                     </div>
                   </ScrollspyNav>

@@ -11,6 +11,7 @@ import Process from "../../components/Process/Process";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import GetStart from "../../components/GetStart/GetStart";
 import Blog from "../../components/Blog/Blog";
+import BlogTwo from "../../components/BlogTwo/BlogTwo";
 import Contact from "../../components/Contact/Contact";
 import Social from "../../components/Social/Social";
 import Footer from "../../components/Footer/footer";
@@ -33,7 +34,8 @@ class Index1 extends Component {
       navItems:[
         { id: 1, idnm: "home", navheading: "Home" },
         { id: 2, idnm: "services", navheading: "Services" },
-        { id: 5, idnm: "team", navheading: "Team" },
+        { id: 6, idnm: "blog", navheading: "DialPad for Enterprises" },
+        { id: 6, idnm: "blogtwo", navheading: "DialPad for Small Businesses" },
         { id: 7, idnm: "contact", navheading: "Contact" },
       ],
       navClass: "",
@@ -61,26 +63,27 @@ class Index1 extends Component {
         
 
         {/* <WebsiteDesc />website description */}
-
         
         
-        {/* <Pricing /> pricing */}
+        
+        {/* <Pricing />  pricing */}
         
 
-        {/* team */}
-        <Team />
+        {/* <Team /> team */}
+       
 
-        {/*<Process /> process */}
+        {/* <Process />process */}
         
 
         {/* <Testimonials />testimonial */}
         
-
-        {/* get started */}
-        <GetStart />
-
-        {/* <Blog />blog */}
         
+        {/* <GetStart />get started */}
+        
+
+        {/* blog */}
+        <Blog />
+        <BlogTwo />
 
         {/* contact */}
         <Contact />

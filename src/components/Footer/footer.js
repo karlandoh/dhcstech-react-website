@@ -40,6 +40,7 @@ class Footer extends Component {
   render() {
     return (
       <React.Fragment>
+        {/*
         <footer className="footer">
           <Container>
             <Row>
@@ -81,6 +82,7 @@ class Footer extends Component {
             </Row>
           </Container>
         </footer>
+                      */}
         {/* Render footer links */}
         <FooterLinks />
 

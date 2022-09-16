@@ -1,8 +1,4 @@
-/* Template Name: Dorsin
-   Author: Themesbrand
-   Version: 2.0.0
-   File Description: Main Css file of the template
-*/
+
 /****************************************\
 
 01.general
@@ -83,7 +79,7 @@ p {
 }
 
 .bg-overlay {
-  background: linear-gradient(to right, #512da8, #711e72);
+  background: linear-gradient(to right, #702323, #721e50);
   opacity: 0.9;
   position: absolute;
   height: 100%;
