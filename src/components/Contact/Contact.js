@@ -2,18 +2,75 @@ import React, { Component } from "react";
 import { Container, Row, Col, FormGroup } from "reactstrap";
 import { AvForm, AvField } from "availity-reactstrap-validation";
 
+import emailjs from 'emailjs-com';
+
 //Import Section Title
 import SectionTitle from "../common/section-title";
+
+import { Helmet } from "react-helmet";
 
 class Features extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+      buttonText: "Send Message",
+      buttonColor: "secondary",
+      buttonDisabled: false
+
+    };
+    this.myRef = React.createRef();
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+
+  handleSubmit(e){
+    e.preventDefault();
+    emailjs.sendForm('service_dr7xr5h', 'template_1jud87m', "#contact-form", 'TNfvMi8oHRCEiRuKl')
+      .then((result) => {
+
+        this.setState(prevState => ({...prevState, buttonColor: "success", buttonText: "Succesfully Sent Email!", buttonDisabled: true}))
+          console.log(result.text);
+
+          setTimeout(
+            (prevState) => this.setState({... prevState, buttonColor: "secondary", buttonText: "Send Message", buttonDisabled: false }), 
+            5000
+          );
+
+      }, (error) => {
+          
+          console.log(error.text);
+
+          let errorText;
+
+          if (error.text.includes("g-recaptcha-response parameter not found")){
+
+            errorText = "Please verify ReCaptcha before continuing.";            
+          }
+          else{
+            errorText = "ERROR Please Try again!"
+          }
+
+          this.setState(prevState => ({...prevState, buttonColor: "primary", buttonText: errorText, buttonDisabled: true}))
+
+          setTimeout(
+            (prevState) => this.setState({... prevState, buttonColor: "secondary", buttonText: "Send Message", buttonDisabled: false }), 
+            5000
+          );          
+      });    
+
   }
 
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <script src="https://www.google.com/recaptcha/api.js" ></script>
+        </Helmet>
+
         <section className="section " id="contact" style={{background: "#f6f6f6"}}>
           <Container>
             {/* section title */}
@@ -49,10 +106,15 @@ class Features extends Component {
                   </p>
                 </div>
               </Col>
+
+
+
+
               <Col lg={8}>
                 <div className="custom-form mt-4 pt-4">
                   <div id="message"></div>
-                  <AvForm name="contact-form" id="contact-form">
+                  {/*<AvForm ref={this.myRef} onSubmit={this.handleSubmit} name="contact-form" id="contact-form"> */}
+                  <AvForm onValidSubmit={this.handleSubmit} name="contact-form" id="contact-form">
                     <Row>
                       <Col lg={6}>
                         <FormGroup className="mt-2">
@@ -97,7 +159,7 @@ class Features extends Component {
                       <Col lg={12}>
                         <FormGroup className="mt-2">
                           <textarea
-                            name="comments"
+                            name="message"
                             id="comments"
                             rows="4"
                             className="form-control"
@@ -112,18 +174,23 @@ class Features extends Component {
                           type="submit"
                           id="submit"
                           name="send"
-                          className="submitBnt btn btn-primary"
-                          value="Send Message"
+                          className={`submitBnt btn btn-${this.state.buttonColor}`}
+                          value={this.state.buttonText}
+                          disabled={this.state.buttonDisabled}
                         />
                         <div id="simple-msg"></div>
                       </Col>
+                      
                     </Row>
+                    <br></br>
+                    <div style={{display: "flex", justifyContent: "flex-end"}} class="g-recaptcha" id="divRecaptcha" data-sitekey="6LeYmREiAAAAABWJMegCVugFG91vIj5gJySttopk"></div>
                   </AvForm>
                 </div>
               </Col>
             </Row>
           </Container>
         </section>
+        
       </React.Fragment>
     );
   }

@@ -8,7 +8,8 @@ class Social extends Component {
       <React.Fragment>
         <section className="contact-social bg-light" >
           <Container>
-            <Row className="align-items-center">
+            <Row className="align-items-right">
+              {/*
               <Col lg={6}>
                 <ul className="list-inline social mt-4">
                   <li className="list-inline-item">
@@ -38,7 +39,8 @@ class Social extends Component {
                   </li>
                 </ul>
               </Col>
-              <Col lg={3} className="mt-4">
+              */}
+              <Col lg={6} className="mt-4">
                 <p className="contact-title">
                   <i className="pe-7s-call"></i> &nbsp;+1 905 000 0000
                 </p>
