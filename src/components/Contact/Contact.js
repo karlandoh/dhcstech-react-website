@@ -86,22 +86,23 @@ class Features extends Component {
                     <span className="h5">Office Address 1:</span>
                     <br />{" "}
                     <span className="text-muted d-block mt-2">
-                      000 John Doe Street, Burlington ON, AAA 111
+                        1873 NE 37 PL, Homestead, Florida, 33033, USA
                     </span>
                   </p>
                   <p className="mt-4">
                     <span className="h5">Office Address 2:</span>
                     <br />{" "}
                     <span className="text-muted d-block mt-2">
-                      000 John Doe Street <br />
-                      Burlington ON, AAA 111
+                      4145 North Service Rd,<br />
+                      Burlington ON, L7L 6A3 <br />
+                      Canada
                     </span>
                   </p>
                   <p className="mt-4">
                     <span className="h5">Working Hours:</span>
                     <br />{" "}
                     <span className="text-muted d-block mt-2">
-                      9:00AM To 6:00PM
+                      9:00AM To 5:00PM
                     </span>
                   </p>
                 </div>

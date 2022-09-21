@@ -42,7 +42,7 @@ class Social extends Component {
               */}
               <Col lg={6} className="mt-4">
                 <p className="contact-title">
-                  <i className="pe-7s-call"></i> &nbsp;+1 905 000 0000
+                  <i className="pe-7s-call"></i> &nbsp;+1 905 000 0000 (wait for 1800 number)
                 </p>
               </Col>
               <Col lg={3} className="mt-4 text-right">

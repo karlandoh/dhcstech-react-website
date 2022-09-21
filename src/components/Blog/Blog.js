@@ -34,36 +34,35 @@ class Blog extends Component {
     return(
       <>
       <br></br>
-              <Row key={key} className="d-flex flex-row justify-content-center align-items-center text-center" style={{margin: "1em"}}>
+        <Row key={key}  className="d-flex flex-row justify-content-center align-items-center text-center" style={{margin: "1em"}}>
 
-        <Col className="hover-effect">
+          <Col className="hover-effect">
 
-          <img src={blog.image} className="img-fluid" alt="Responsive Image" ></img>
-        </Col>
+            <img src={blog.image} className="img-fluid" alt="Responsive Image" ></img>
+          </Col>
 
-        <Col className="col-md-4 hover-effect">
+              <Col className="col-md-4 hover-effect">
 
-          
-          <Row>
+                    
 
-              <h1 className="center-block">{blog.title}</h1>
+                        <h1 className="center-block">{blog.title}</h1>
 
-              {
-                blog.points.map((point, key) => (
-                    <>
-                      <h3>{point[0]}</h3>
-                      <p>{point[1]}</p>  
-                      <br/> 
-                    </>
+                        {
+                          blog.points.map((point, key) => (
+                              <>
+                                <h3>{point[0]}</h3>
+                                <p>{point[1]}</p>  
+                                <br/> 
+                              </>
 
-                ))
-              }
-              
-              
-          </Row>
+                          ))
+                        }
+                        
+                        
 
 
-        </Col>
+
+              </Col>
 
         </Row>      
       </>
